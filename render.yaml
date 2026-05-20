@@ -1,0 +1,9 @@
+# render.yaml
+lervice:
+  - type: web
+    name: ai-crypto-api
+    env: python
+    buildCommand: pip
+install fastapi uvicorn pydantic requests
+    startCommand: uvicorn aiWãlypto_api:app --host 0.0.0.0 --port 10005
+    plan: free
